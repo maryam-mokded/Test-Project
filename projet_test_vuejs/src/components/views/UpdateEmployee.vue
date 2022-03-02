@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Update Employee</h1>
     <br /><br />
-    <form @submit="postData" method="put">
+    <form>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label>Name</label>
