@@ -1,11 +1,7 @@
 <template>
-  <div>
-    <div id="about">
-      <navBar />
-    </div>
-    <div class="container">
+  <div class="container">
+    <navBar />
     <b-table responsive="sm" :items="items" />
-   </div>
   </div>
 </template>
 
@@ -59,10 +55,6 @@ export default {
 </script>
 
 <style>
-#about {
-  margin-left: 500px !important;
-  margin-top: 60px !important;
-}
 h1 {
   margin-left: 60px;
 }

@@ -17,10 +17,22 @@ export default[
         import("../components/views/About.vue"),
     },
     {
-      path: "/contact",
-      name: "Contact",
+      path: "/update/:id?",
+      name: "UpdateEmployee",
       component: () =>
-        import("../components/views/Contact.vue"),
+        import("../components/views/UpdateEmployee.vue"),
+    },
+    {
+      path: "/add",
+      name: "AddEmployee",
+      component: () =>
+        import("../components/views/AddEmployee.vue"),
+    },
+    {
+      path: "/details/:id?",
+      name: "Details",
+      component: () =>
+        import("../components/views/DétailsEmployee.vue"),
     },
     {
       path: "**",

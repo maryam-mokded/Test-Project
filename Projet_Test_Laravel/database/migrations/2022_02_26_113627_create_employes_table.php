@@ -18,7 +18,7 @@ class CreateEmployesTable extends Migration
             $table->string('name');
             $table->string('address');
             $table->string('phone_number');
-            $table->string('photo');
+            $table->string('photo')->nullable($value = true);
             $table->double('salaire');
             $table->timestamps();
         });

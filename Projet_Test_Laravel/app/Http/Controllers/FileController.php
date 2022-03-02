@@ -7,7 +7,7 @@ use App\Models\Employe;
 
 class FileController extends Controller
 {
-    function uploadFile($id,Request $req){
+/*    function uploadFile($id,Request $req){
         $employee  = Employe::findOrFail($id);
         $result = $req->file('file')->store('Storage_Folder');
         $employee->photo = $result;
@@ -25,4 +25,4 @@ class FileController extends Controller
         ]);
         }
     }
-}
+*/}

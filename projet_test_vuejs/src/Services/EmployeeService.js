@@ -1,7 +1,7 @@
 import  axios  from "axios"
 
 const apiEmploye = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api/employees',
+    baseURL: 'http://localhost:8000/api/',
     withCredentials: false,
     headers: {
         Accept: 'application/json',
@@ -10,7 +10,22 @@ const apiEmploye = axios.create({
 })
 
 export default {
-    getEmployee() { 
-        return apiEmploye.get()
+    getEmployees() { 
+        return apiEmploye.get('employees')
+    },
+    getEmployeeById(id) { 
+        return apiEmploye.get('employee/'+id)
+    },
+    DeleteEmployee(id) { 
+        return apiEmploye.delete('employee/'+id)
+    },
+    AddEmployee(employee) { 
+        return apiEmploye.post('employee',employee)
+    },
+    UpdateEmployee(id,employee) { 
+        return apiEmploye.put('employee/'+id,employee)
     }
+
+
+
 }

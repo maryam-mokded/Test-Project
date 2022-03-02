@@ -36,6 +36,7 @@ class EmployeController extends Controller
         $employee->address = $request->input('address');
         $employee->phone_number = $request->input('phone_number');
         $employee->salaire = $request->input('salaire');
+        $employee->photo = $request->input('photo');
         $employee->save();
         return new EmployeResource($employee);
     }
@@ -67,6 +68,7 @@ class EmployeController extends Controller
         $employee->name = $request->input('name');
         $employee->address = $request->input('address');
         $employee->phone_number = $request->input('phone_number');
+        $employee->photo = $request->input('photo');
         $employee->salaire = $request->input('salaire');
         $employee->save();
         return new EmployeResource($employee);
