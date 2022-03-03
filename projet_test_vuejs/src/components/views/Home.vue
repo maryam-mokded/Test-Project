@@ -10,7 +10,7 @@
       <router-link  id="btn" v-bind:to="'/details/' + employee.id" type="button" class="btn btn-info"> Show </router-link>
       <router-link  id="btn" v-bind:to="'/update/' + employee.id" type="button" class="btn btn-light"> Update </router-link>
       <button type="button" class="btn btn-secondary" v-on:click="DeleteEmployee(employee.id)"> Delete </button>
-    
+   
     </p>
   </div>
 </template>

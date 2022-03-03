@@ -25,7 +25,4 @@ export default {
     UpdateEmployee(id,employee) { 
         return apiEmploye.put('employee/'+id,employee)
     }
-
-
-
 }
